@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 32px;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  border-radius: 34px;
+  padding: 25px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(111%);
+}
+
+.luffy {
+  box-shadow: 0 5px 10px rgba(214, 19, 12, 0.416);
+}
+
+.luffy::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #a90000;
+  border-radius: 24px 24px 24px 24px;
+}
+
+.zoro::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #44d337;
+  border-radius: 24px 24px 24px 24px;
+}
+
+.zoro {
+  box-shadow: 0 5px 10px rgba(56, 224, 41, 0.4);
+}
+
+.sanji::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #dede1b;
+  border-radius: 24px 24px 24px 24px;
+}
+
+.sanji {
+  box-shadow: 0 5px 10px rgba(250, 235, 26, 0.416);
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.luffy-img {
+  background-color: #ff0000;
+}
+
+.zoro-img {
+  background-color: #15ff00;
+}
+
+.sanji-img {
+  background-color: #ffff00;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 8px;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+}
+
+.text-data .doa {
+  font-weight: 600;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-data .bounty {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  font-size: 18px;
+  border-radius: 50%;
+  margin: 0 6px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.luffy-icon {
+  background-color: rgb(198, 23, 23);
+  box-shadow: 0 5px 10px rgba(192, 13, 7, 0.316);
+}
+
+.zoro-icon {
+  background-color: #44d337;
+  box-shadow: 0 5px 10px rgba(56, 224, 41, 0.4);
+}
+
+.sanji-icon {
+  background-color: #dede1b;
+  box-shadow: 0 5px 10px rgba(250, 235, 26, 0.416);
+}
+.media-buttons .luffy-icon:hover {
+  background-color: #ffb300;
+}
+
+.media-buttons .zoro-icon:hover {
+  background-color: #3c4f37;
+}
+
+.media-buttons .sanji-icon:hover {
+  background-color: #000;
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .button {
+  margin: 0 10px;
+  padding: 8px 24px;
+  border-radius: 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.luffy-btn {
+  background-color: #a90000;
+}
+
+.zoro-btn {
+  background-color: #44d337;
+}
+
+.sanji-btn {
+  background-color: #dede1b;
+}
+.buttons .luffy-btn:hover {
+  background-color: #ffb300;
+}
+
+.buttons .zoro-btn:hover {
+  background-color: #3c4f37;
+}
+
+.buttons .sanji-btn:hover {
+  background-color: #000;
+}
+
+.luffy-btn-msg {
+  background-color: #ffb300;
+}
+
+.luffy-btn-msg:hover {
+  color: #ff0000;
+}
+
+.zoro-btn-msg {
+  background-color: #3c4f37;
+  font-weight: 700;
+}
+
+.zoro-btn-msg:hover {
+  color: #44d337;
+}
+
+.sanji-btn-msg {
+  background-color: #000;
+}
+
+.sanji-btn-msg:hover {
+  color: #dede1b;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #ffb300;
+}
+
+.data .i {
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.data:last-child {
+  border-right: none;
+}
